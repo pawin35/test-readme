@@ -138,7 +138,7 @@ sudo apt-mark hold kubelet kubeadm kubectl
 #### Install Debian and basic setup
 
 1. Set up the Debian using [the same process as in master nodes](#install-debian-for-all-master-node)
-2. configuring IP and host name of the load balancer server according to the [topology of this project)(#topology)
+2. configuring IP and host name of the load balancer server according to the [topology of this project](#topology)
 3. Set up HAProxy
 
 ``` sh
