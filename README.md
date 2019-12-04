@@ -35,7 +35,7 @@ Kubenetes cluster topology
 ![Alt text](image/topology.png?raw=true "Kubernetes cluster topology image")
 
 | Device                                   |        Host name        |             IP Address             |
-| ---------------------------------------- | :----------------------------------------: | :--------------------------------: |
+| ---------------------------------------- | ---------------------------------------- | :--------------------------------: |
 | Master 1 [VM]                            |      kubernetes-master-0      |           192.168.0.254            |
 | Master 2 [VM]                            |      kubernetes-master-1      |           192.168.0.253            |
 | Load Balancer for Master [VM] - HA Proxy |       load-balancer-1       |           192.168.0.200            |
@@ -72,7 +72,7 @@ sudo update-alternatives --set ebtables /usr/sbin/ebtables-legacy
 
 We create multi-master using 2 VMs with stacked etcd-control plane strategy. The chosen linux distribution for master nodes is Debian 10 (Buster) as of Raspbian Buster was used in our Raspberry Pi nodes.
 
-#### Install-Debian-for-all-master-node
+#### Install Debian for all master node
 
 1. Download Debian 10 iso from [here](https://www.debian.org/CD/).
 2. Install Debian on VirtualBox with 2GB of RAM or higher.
@@ -137,8 +137,8 @@ sudo apt-mark hold kubelet kubeadm kubectl
 
 #### Install Debian and basic setup
 
-1. Set up the Debian using [the same process as in master nodes](#Install-Debian-for-all-master-node)
-2. configuring IP and host name of the load balancer server according to the [topology of this project)(#Topology)
+1. Set up the Debian using [the same process as in master nodes](#install-debian-for-all-master-node)
+2. configuring IP and host name of the load balancer server according to the [topology of this project)(#topology)
 3. Set up HAProxy
 
 ``` sh
