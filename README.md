@@ -35,7 +35,7 @@ Kubenetes cluster topology
 ![Alt text](image/topology.png?raw=true "Kubernetes cluster topology image")
 
 | Device                                   |        Host name        |             IP Address             |
-| ---------------------------------------- | ---------------------------------------- | :--------------------------------: |
+| ---------------------------------------- | :----------------------------------------: | :--------------------------------: |
 | Master 1 [VM]                            |      kubernetes-master-0      |           192.168.0.254            |
 | Master 2 [VM]                            |      kubernetes-master-1      |           192.168.0.253            |
 | Load Balancer for Master [VM] - HA Proxy |       load-balancer-1       |           192.168.0.200            |
